@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Monitoring Système</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖥️</text></svg>">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <a href="index.html" class="icon">🖥️</a>
+                SysMonitor Dashboard
+            </h1>
+            <div class="status-indicator">
+                <span id="connection-status" class="status-dot online"></span>
+                <span>Connecté</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Vue d'ensemble -->
+            <section class="overview">
+                <h2>Vue d'ensemble du système</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>CPU</h3>
+                            <span class="icon">⚡</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="metric">
+                                <span class="value" id="cpu-usage">0%</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="cpu-progress"></div>
+                                </div>
+                            </div>
+                            <div class="status" id="cpu-status">Normal</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Mémoire</h3>
+                            <span class="icon">💾</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="metric">
+                                <span class="value" id="memory-usage">0%</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="memory-progress"></div>
+                                </div>
+                            </div>
+                            <div class="status" id="memory-status">Normal</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Réseau</h3>
+                            <span class="icon">🌐</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="metric">
+                                <span class="value" id="network-usage">0 MB/s</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="network-progress"></div>
+                                </div>
+                            </div>
+                            <div class="status" id="network-status">Normal</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Stockage</h3>
+                            <span class="icon">💽</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="metric">
+                                <span class="value" id="storage-usage">0%</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="storage-progress"></div>
+                                </div>
+                            </div>
+                            <div class="status" id="storage-status">Normal</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Graphiques -->
+            <section class="charts">
+                <h2>Historique des performances</h2>
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <h3>Utilisation CPU (24h)</h3>
+                        <canvas id="cpu-chart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Utilisation Mémoire (24h)</h3>
+                        <canvas id="memory-chart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Logs système -->
+            <section class="logs">
+                <h2>Logs système récents</h2>
+                <div class="logs-container">
+                    <div class="logs-header">
+                        <button id="refresh-logs" class="btn">🔄 Actualiser</button>
+                        <select id="log-level" class="select">
+                            <option value="all">Tous les niveaux</option>
+                            <option value="error">Erreurs</option>
+                            <option value="warning">Avertissements</option>
+                            <option value="info">Info</option>
+                        </select>
+                    </div>
+                    <div class="logs-list" id="logs-list">
+                        <!-- Les logs seront générés dynamiquement -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alertes -->
+            <section class="alerts">
+                <h2>Alertes actives</h2>
+                <div class="alerts-container" id="alerts-container">
+                    <!-- Les alertes seront générées dynamiquement -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SysMonitor Dashboard - Version 1.0.0</p>
+            <p>Dernière mise à jour : <span id="last-update">--</span></p>
+        </div>
+    </footer>
+</body>
+</html>

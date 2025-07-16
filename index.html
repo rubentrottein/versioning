@@ -1,45 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versioning</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
             background-color: #f4f4f4;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-        a {
-            color: #0066cc;
         }
         pre {
             background-color: #eee;
             padding: 10px;
             border-radius: 5px;
         }
+        
+        .card {
+            display: flex;
+            justify-content: space-around;
+            border-radius: 7px;
+            gap: 1em;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: aliceblue;
+            font-weight: 100;
+            font-family: Arial, sans-serif;
+        }
+        .card p {
+            margin: 0.5rem 0;
+            font-size: .9em;
+            font-style: italic;
+            color: #ccc;
+        }
+        .card a {
+            display: grid;
+            align-items: center;
+            margin-top: 1rem;
+            text-align: center;
+            background-color: seagreen;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: .3s background-color;
+            width: 18%;
+        }
+        .card a:hover {
+            background-color: darkgreen;
+        }
+        header, footer {
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
+            background: dodgerblue;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1>Introduction au Versioning Git</h1>
-    <p>Ceci est la version 1.0 de notre document</p>
+    <header>
+        <h1>Introduction au Versioning Git</h1>
+        <p>Ceci est la version 1.0 de notre document</p>
+    </header>
+    <main>
 
-    <p>Pour plus d'informations, consultez la <a href="https://git-scm.com/doc">documentation Git</a>.</p>
-
-    <h2>Exemple de Code</h2>
-    <pre><code>function helloWorld() {
-        console.log("Hello, World!");
-    }</code></pre>
-
+        <i>Mini projet de versioning avec Git. Ce projet est conçu pour démontrer les concepts de base du versioning et de la gestion de versions décentralisée.</i>
+        
+        <article class="card">
+            <a href="dashboard.html" target="_blank">
+                <h2>Dashboard de Monitoring Système</h2>
+                <p>Accédez au dashboard pour surveiller les performances du système.</p>
+            </a>
+            <a href="README.md" target="_blank">
+                <h2>ReadME du projet</h2>
+                <p>Information sur le cours et les exercices</p>
+            </a>
+            <a href="https://git-scm.com/doc" target="_blank">
+                <h2>La documentation Git.</h2>
+                <p>Documentation officielle de Git pour approfondir vos connaissances.</p>
+            </a>
+            <a href="documents/RNCP39608BC02FM04 - Administration Heìbergement Web (1).docx" target="_blank">
+                <h2>Fiche RNCP Administration / Hebergerment</h2>
+            </a>
+            <a href="documents/RNCP39608BC03FM03 - Versioning et gestion de versions deěcentraliseě (1).docx" target="_blank">
+                <h2>Fiche RNCP Versioning et gestion de versions décentralisé</h2>
+            </a>
+        </article>
+        
+        <h2>Exemple de Code</h2>
+        <article class="card">
+            
+            <pre><code>function helloWorld() {
+                console.log("Hello, World!");
+            }</code></pre>
+            <div>
+                <p>Exécutez la fonction <code>helloWorld()</code> pour afficher un message d'alerte.</p>
+                <button class="helloworld">Exécuter helloWorld()</button>
+            </div>
+            
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Versioning Project. Tous droits réservés.</p>
+        <p>Version 1.0</p>
+    </footer>
     <script>
-        console.log("Hello, World!");
+            function helloWorld() {
+                alert("Hello, World!");
+            }
+            document.querySelector(".helloworld").addEventListener("click", helloWorld);
     </script>
 </body>
 </html>
