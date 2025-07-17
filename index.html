@@ -19,6 +19,7 @@
         .card {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             border-radius: 7px;
             gap: 1em;
             background: rgba(255, 255, 255, 0.95);
@@ -71,48 +72,62 @@
         <h1>Introduction au Versioning Git</h1>
         <p>Ceci est la version 1.0 de notre document</p>
     </header>
+
     <main>
 
-        <i>Mini projet de versioning avec Git. Ce projet est conçu pour démontrer les concepts de base du versioning et de la gestion de versions décentralisée.</i>
+        <section>
+
+            <i>Mini projet de versioning avec Git. Ce projet est conçu pour démontrer les concepts de base du versioning et de la gestion de versions décentralisée.</i>
         
-        <article class="card">
-            <a href="dashboard.html" target="_blank">
-                <h2>Dashboard de Monitoring Système</h2>
-                <p>Accédez au dashboard pour surveiller les performances du système.</p>
-            </a>
-            <a href="README.md" target="_blank">
-                <h2>ReadME du projet</h2>
-                <p>Information sur le cours et les exercices</p>
-            </a>
-            <a href="https://git-scm.com/doc" target="_blank">
-                <h2>La documentation Git.</h2>
-                <p>Documentation officielle de Git pour approfondir vos connaissances.</p>
-            </a>
-            <a href="documents/RNCP39608BC02FM04 - Administration Heìbergement Web (1).docx" target="_blank">
-                <h2>Fiche RNCP Administration / Hebergerment</h2>
-            </a>
-            <a href="documents/RNCP39608BC03FM03 - Versioning et gestion de versions deěcentraliseě (1).docx" target="_blank">
-                <h2>Fiche RNCP Versioning et gestion de versions décentralisé</h2>
-            </a>
-        </article>
-        
-        <h2>Exemple de Code</h2>
-        <article class="card">
+            <article class="card">
+                <a href="dashboard.html" target="_blank">
+                    <h2>Dashboard de Monitoring Système</h2>
+                    <p>Accédez au dashboard pour surveiller les performances du système.</p>
+                </a>
+                <a href="README.md" target="_blank">
+                    <h2>ReadME du projet</h2>
+                    <p>Information sur le cours et les exercices</p>
+                </a>
+                <a href="https://git-scm.com/doc" target="_blank">
+                    <h2>La documentation Git.</h2>
+                    <p>Documentation officielle de Git pour approfondir vos connaissances.</p>
+                </a>
+                <a href="documents/RNCP39608BC02FM04 - Administration Heìbergement Web (1).docx" target="_blank">
+                    <h2>Fiche RNCP Administration / Hebergerment</h2>
+                </a>
+                <a href="documents/RNCP39608BC03FM03 - Versioning et gestion de versions deěcentraliseě (1).docx" target="_blank">
+                    <h2>Fiche RNCP Versioning et gestion de versions décentralisé</h2>
+                </a>
+            </article>
             
-            <pre><code>function helloWorld() {
-                console.log("Hello, World!");
-            }</code></pre>
-            <div>
-                <p>Exécutez la fonction <code>helloWorld()</code> pour afficher un message d'alerte.</p>
-                <button class="helloworld">Exécuter helloWorld()</button>
-            </div>
+            <h2>Exemple de Code</h2>
             
-        </article>
+            <article class="card">
+                
+                <pre><code>function helloWorld() {
+                    console.log("Hello, World!");
+                }</code></pre>
+                <div>
+                    <p>Exécutez la fonction <code>helloWorld()</code> pour afficher un message d'alerte.</p>
+                    <button class="helloworld">Exécuter helloWorld()</button>
+                </div>
+                
+            </article>
+        </section>
+
+        <section>
+            <h2>Hébergement web (Markdown)</h2>
+            <iframe src="documents/ex2_hebergement.md" frameborder="0"></iframe>
+            <iframe src="documents/ex3_hebergement.md" frameborder="0"></iframe>
+        </section>
+
     </main>
+
     <footer>
         <p>&copy; 2025 Versioning Project. Tous droits réservés.</p>
         <p>Version 1.0</p>
     </footer>
+
     <script>
             function helloWorld() {
                 alert("Hello, World!");
