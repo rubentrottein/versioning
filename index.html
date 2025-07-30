@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Versioning</title>
     <style>
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #e9fdff;
         }
         pre {
-            background-color: #eee;
+            background-color: #38adaf;
+            color : #fff;
             padding: 10px;
             border-radius: 5px;
         }
-        
+
+        .helloworld{
+            padding : 10px 12px;
+            background : #38adaf;
+            border : none;
+            border-radius : 3px;
+            box-shadow: -167px -170px 22px -153px rgba(255,255,255,0.21) inset;
+            -webkit-box-shadow: -167px -170px 22px -153px rgba(255,255,255,0.21) inset;
+            -moz-box-shadow: -167px -170px 22px -153px rgba(255,255,255,0.21) inset;
+            cursor : pointer;
+        }
+
+        #fightin{
+            font-size : 50px;
+            background: #fff;
+            padding : 50px 20px;
+            color : #ea48ee;
+        }
         .card {
             display: flex;
             justify-content: space-around;
-            flex-wrap: wrap;
             border-radius: 7px;
             gap: 1em;
             background: rgba(255, 255, 255, 0.95);
@@ -40,30 +60,29 @@
             margin: 0.5rem 0;
             font-size: .9em;
             font-style: italic;
-            color: #ccc;
+            color: #fffafa;
         }
         .card a {
             display: grid;
             align-items: center;
             margin-top: 1rem;
             text-align: center;
-            background-color: seagreen;
+            background-color: #63E6BE;
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 5px;
             text-decoration: none;
             transition: .3s background-color;
-            min-width: 30vw;
-            max-width: 40vw;
+            width: 18%;
         }
         .card a:hover {
-            background-color: darkgreen;
+            background-color: #38adaf;
         }
         header, footer {
             text-align: center;
             padding: 1rem;
             box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
-            background: dodgerblue;
+            background: #ea48ee;
             color: white;
         }
     </style>
@@ -71,64 +90,52 @@
 <body>
     <header>
         <h1>Introduction au Versioning Git</h1>
+        <h2 id="fightin">FIGHTIN  !! <i class="fa-solid fa-hand-fist fa-lg" style="color: #63E6BE;"></i></h2>
         <p>Ceci est la version 1.0 de notre document</p>
-    </header>
 
+    </header>
     <main>
 
-        <section>
-
-            <i>Mini projet de versioning avec Git. Ce projet est conçu pour démontrer les concepts de base du versioning et de la gestion de versions décentralisée.</i>
+        <i>Mini projet de versioning avec Git. Ce projet est conçu pour démontrer les concepts de base du versioning et de la gestion de versions décentralisée.</i>
         
-            <article class="card">
-                <a href="dashboard.html" target="_blank">
-                    <h2>Dashboard de Monitoring Système</h2>
-                    <p>Accédez au dashboard pour surveiller les performances du système.</p>
-                </a>
-                <a href="README.md" target="_blank">
-                    <h2>ReadME du projet</h2>
-                    <p>Information sur le cours et les exercices</p>
-                </a>
-                <a href="https://git-scm.com/doc" target="_blank">
-                    <h2>La documentation Git.</h2>
-                    <p>Documentation officielle de Git pour approfondir vos connaissances.</p>
-                </a>
-                <a href="documents/RNCP39608BC02FM04 - Administration Heìbergement Web (1).docx" target="_blank">
-                    <h2>Fiche RNCP Administration / Hebergerment</h2>
-                </a>
-                <a href="documents/RNCP39608BC03FM03 - Versioning et gestion de versions deěcentraliseě (1).docx" target="_blank">
-                    <h2>Fiche RNCP Versioning et gestion de versions décentralisé</h2>
-                </a>
-            </article>
+        <article class="card">
+            <a href="dashboard.html" target="_blank">
+                <h2>Dashboard de Monitoring Système</h2>
+                <p>Accédez au dashboard pour surveiller les performances du système.</p>
+            </a>
+            <a href="README.md" target="_blank">
+                <h2>ReadME du projet</h2>
+                <p>Information sur le cours et les exercices</p>
+            </a>
+            <a href="https://git-scm.com/doc" target="_blank">
+                <h2>La documentation Git.</h2>
+                <p>Documentation officielle de Git pour approfondir vos connaissances.</p>
+            </a>
+            <a href="documents/RNCP39608BC02FM04 - Administration Heìbergement Web (1).docx" target="_blank">
+                <h2>Fiche RNCP Administration / Hebergerment</h2>
+            </a>
+            <a href="documents/RNCP39608BC03FM03 - Versioning et gestion de versions deěcentraliseě (1).docx" target="_blank">
+                <h2>Fiche RNCP Versioning et gestion de versions décentralisé</h2>
+            </a>
+        </article>
+        
+        <h2>Exemple de Code</h2>
+        <article class="card">
             
-            <h2>Exemple de Code</h2>
+            <pre><code>function helloWorld() {
+                console.log("Hello, World!");
+            }</code></pre>
+            <div>
+                <p>Exécutez la fonction <code>helloWorld()</code> pour afficher un message d'alerte.</p>
+                <button class="helloworld">Exécuter helloWorld()</button>
+            </div>
             
-            <article class="card">
-                
-                <pre><code>function helloWorld() {
-                    console.log("Hello, World!");
-                }</code></pre>
-                <div>
-                    <p>Exécutez la fonction <code>helloWorld()</code> pour afficher un message d'alerte.</p>
-                    <button class="helloworld">Exécuter helloWorld()</button>
-                </div>
-                
-            </article>
-        </section>
-
-        <section>
-            <h2>Hébergement web (Markdown)</h2>
-            <iframe src="documents/ex2_hebergement.md" frameborder="0"></iframe>
-            <iframe src="documents/ex3_hebergement.md" frameborder="0"></iframe>
-        </section>
-
+        </article>
     </main>
-
     <footer>
         <p>&copy; 2025 Versioning Project. Tous droits réservés.</p>
         <p>Version 1.0</p>
     </footer>
-
     <script>
             function helloWorld() {
                 alert("Hello, World!");
