@@ -17,6 +17,18 @@ Tu fais une modification dans le repo. Tu peux au choix :
 2. Utiliser Git pour modifier le repo en ligne
 
 Le repo contient toutes les informations ! 
+2.1 Branche Git :
+
+A. Crée ta branche : 
+
+    git branch "nomdebranche"
+
+B. Passe dessus : 
+
+    git checkout nomdebranche
+
+Et a partir de là tes modifications perso seront sauvegardées dans ta branche.
+
 
 A.Utilise
 
