@@ -1,6 +1,9 @@
 # Ce qu’il faut pour une installation manuelle sur Windows
+
 ## 📦 Option 1 : Apache sur Windows (manuelle)
+
 ### 🧭 Étapes simplifiées :
+
 Télécharger Apache binaire pour Windows
 Va ici : https://www.apachelounge.com/download/
 
