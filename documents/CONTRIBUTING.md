@@ -1,5 +1,7 @@
 # ✍️ Contribuer à ce projet
 
+Normalement si je t'ai ajouté au repo, tu peux l'utiliser librement. Cependant, même sans accès tu peux archiver des modifications dans un **fork**, une version personnelle du repo.
+
 Merci de ton intérêt pour ce projet ! Voici comment proposer des modifications sans avoir besoin d’un accès direct en écriture.
 
 ---
