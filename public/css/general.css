@@ -1,0 +1,87 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e9fdff;
+}
+pre {
+    background-color: #38adaf;
+    color : #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.helloworld{
+    padding : 10px 12px;
+    background : #38adaf;
+    border : none;
+    border-radius : 3px;
+    box-shadow: -167px -170px 22px -153px rgba(255,255,255,0.21) inset;
+    -webkit-box-shadow: -167px -170px 22px -153px rgba(255,255,255,0.21) inset;
+    -moz-box-shadow: -167px -170px 22px -153px rgba(255,255,255,0.21) inset;
+    cursor : pointer;
+}
+
+#fightin{
+    font-size : 50px;
+    background: #fff;
+    padding : 50px 20px;
+    color : #ea48ee;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 7px;
+    gap: 1em;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.card-info {
+    border-radius: 7px;
+    gap: 1em;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: aliceblue;
+    font-weight: 100;
+    font-family: Arial, sans-serif;
+}
+.card p {
+    margin: 0.5rem 0;
+    font-size: .9em;
+    font-style: italic;
+    color: #fffafa;
+}
+.card a {
+    display: grid;
+    align-items: center;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #63E6BE;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .3s background-color;
+    width: 18%;
+}
+.card a:hover {
+    background-color: #38adaf;
+}
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
+    background: #ea48ee;
+    color: white;
+}
