@@ -1,2 +1,4 @@
 # Ignorer les fichiers de configuration de l'IDE
 .qodo
+.idea
+.vscode
